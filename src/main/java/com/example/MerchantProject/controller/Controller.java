@@ -14,7 +14,7 @@ public class Controller {
     @Autowired
     CurrencyService currencyService;
 
-    @GetMapping("")
+    @GetMapping("/currencies")
     List<Currency> currencies(){
         return currencyService.getCurrencies();
     }
