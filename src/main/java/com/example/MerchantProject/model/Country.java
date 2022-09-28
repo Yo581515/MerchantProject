@@ -16,7 +16,7 @@ public class Country {
     @Column(name = "country_name")
     private String countryName;
 
-    private Currency currency;
+    private Currency currency11;
 
 
 }
