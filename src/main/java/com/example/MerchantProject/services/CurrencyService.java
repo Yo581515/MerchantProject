@@ -10,9 +10,10 @@ import java.util.List;
 @Service
 public class CurrencyService {
     @Autowired
-    CurrencyRepository currencyRepository ;
+    CurrencyRepository currencyRepository;
 
      public List<Currency> getCurrencies(){
+
          return currencyRepository.findAll();
      }
 
