@@ -1,4 +1,4 @@
-package com.example.MerchantProject.model.customer_info_services;
+package com.example.MerchantProject.javaclasses.customer_info_services;
 
 import lombok.Data;
 
@@ -15,15 +15,15 @@ public class CustomerInfoServices {
     private Long info_service_id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "balance_id", referencedColumnName = "info_service_id")
+    @JoinColumn(name = "balance_id", referencedColumnName = "balance_id")
     private BalanceCheckLink balanceCheckLink;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "FAQ_id", referencedColumnName = "info_service_id")
-    private Long FAQ_id;
+    @JoinColumn(name = "FAQ_id", referencedColumnName = "FAQ_id")
+    private CustomerFAQs FAQ;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "TAC_id", referencedColumnName = "info_service_id")
-    private Long TAC_id;
+    @JoinColumn(name = "TAC_id", referencedColumnName = "TAC_id")
+    private GiftcardTermsAndConditions TAC;
 
 }

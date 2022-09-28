@@ -1,4 +1,4 @@
-package com.example.MerchantProject.model.customer_info_services;
+package com.example.MerchantProject.javaclasses.customer_info_services;
 
 import lombok.Data;
 
@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
+@Table(name = "FAQ")
 public class CustomerFAQs {
 
     @Id
@@ -13,4 +14,7 @@ public class CustomerFAQs {
     @Column(name = " FAQ_id", nullable = false)
     private Long FAQ_id;
     private String FAQ_url;
+
+    @OneToOne(mappedBy = "FAQ")
+    private CustomerInfoServices infoServices;
 }

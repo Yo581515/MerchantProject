@@ -1,4 +1,4 @@
-package com.example.MerchantProject.model.customer_info_services;
+package com.example.MerchantProject.javaclasses.customer_info_services;
 
 import lombok.Data;
 
@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
+@Table(name = "TAC")
 public class GiftcardTermsAndConditions {
 
     @Id
@@ -14,4 +15,6 @@ public class GiftcardTermsAndConditions {
     private Long TAC_id;
     private String TAC_url;
 
+    @OneToOne(mappedBy = "TAC")
+    private CustomerInfoServices infoServices;
 }
