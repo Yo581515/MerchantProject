@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 public class Controller {
 //testing testing
+    //push to Ørjan test
 
     @Autowired
     CurrencyService currencyService;
