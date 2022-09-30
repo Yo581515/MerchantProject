@@ -1,6 +1,6 @@
 package com.example.MerchantProject.controller;
 
-import com.example.MerchantProject.model.Currency;
+import com.example.MerchantProject.Entity.Currency;
 import com.example.MerchantProject.services.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
