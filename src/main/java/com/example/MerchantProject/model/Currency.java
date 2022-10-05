@@ -1,10 +1,11 @@
-package com.example.MerchantProject.Entity;
-
+package com.example.MerchantProject.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Data
 @Entity
@@ -21,5 +22,6 @@ public class Currency {
     public boolean equals(Currency currency){
         return this.getCurrency().equals(currency.getCurrency());
     }
+
 
 }
