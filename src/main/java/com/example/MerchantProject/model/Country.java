@@ -2,21 +2,19 @@ package com.example.MerchantProject.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
 public class Country {
     @Id
-    @Column(name = "country_id", nullable = false)
-    private Long country_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long countryId;
 
     @Column(name = "country_name")
     private String countryName;
 
-    private Currency currency11;
-
-
+    @ManyToOne(targetEntity = Currency.class)
+    @JoinColumn(name = "currency_id")
+    private Currency currency;
 }
