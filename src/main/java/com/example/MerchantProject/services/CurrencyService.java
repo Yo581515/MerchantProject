@@ -1,6 +1,6 @@
 package com.example.MerchantProject.services;
 
-import com.example.MerchantProject.Entity.Currency;
+import com.example.MerchantProject.model.Currency;
 import com.example.MerchantProject.reposetories.CurrencyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
