@@ -4,6 +4,7 @@ import com.example.MerchantProject.Entity.Currency;
 import com.example.MerchantProject.model.Country;
 import com.example.MerchantProject.services.CountryService;
 import com.example.MerchantProject.services.CurrencyService;
+import com.example.MerchantProject.services.MerchantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +19,8 @@ public class Controller {
     @Autowired
     CountryService countryService;
 
+    @Autowired
+    MerchantService merchantService;
 
     //http://localhost:8080/merchant/currencies
     @GetMapping("/currencies")

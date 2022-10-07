@@ -22,13 +22,11 @@ public class Merchant {
     private String email;
     private String urllogo;
     private Integer org_number;
-    private Timestamp createdime;
+    private Timestamp createdtime;
     private boolean isnational;
     private boolean international;
-    private Enum brand_category;
     private String retailer_description;
     private String retailer_description_redemption_country;
-    private Enum merchantstatus;
     private Long tax_number;
     private String payout_status;
 
@@ -39,10 +37,7 @@ public class Merchant {
     @Enumerated(EnumType.STRING)
     Collection<BrandCategories> categories;
 
-    public void test() {
-        categories.add(BrandCategories.HOBBIES);
 
-    }
 
 //    @OneToMany
 //    @JoinColumn(name = "giftcard_product_id", RefererencedColumnName ="product_id")
@@ -60,11 +55,4 @@ public class Merchant {
 //    @OneToMany
 //    @JoinColumn(name = "country_of_merchant_id", RefererencedColumnName ="country_mer_id")
 //    private Country_of_merchant country_of_merchant;
-//
-//    @OneToOne
-//    @JoinColumn(name = "description", RefererencedColumnName ="description_id")
-//    private Description description;
-
-    //@OneToMany
-    //Reference to Enum_merchant_status
 }
