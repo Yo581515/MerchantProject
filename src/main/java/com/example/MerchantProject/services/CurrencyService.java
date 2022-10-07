@@ -44,7 +44,7 @@ public class CurrencyService {
         if (oldCurrency == null) {
             return null;
         }
-        if (oldCurrency.getCurrency() != null && oldCurrency.getCurrency().length() > 0) {
+        if (oldCurrency.getCurrency() != null && !oldCurrency.equals(currency)) {
             oldCurrency.setCurrency(currency.getCurrency());
         }
         return currencyRepository.save(oldCurrency);
