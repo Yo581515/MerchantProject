@@ -1,5 +1,6 @@
 package com.example.MerchantProject.Entity;
 
+import com.example.MerchantProject.Entity.customer_info_services.CustomerInfoServices;
 import com.example.MerchantProject.enums.BrandCategories;
 import com.example.MerchantProject.enums.MerchantStatus;
 import lombok.Data;
@@ -32,22 +33,12 @@ public class Merchant {
 
     @Enumerated(EnumType.STRING)
     private MerchantStatus merchantStatus;
+
     @ElementCollection(targetClass = BrandCategories.class)
     @CollectionTable
     @Enumerated(EnumType.STRING)
     Collection<BrandCategories> categories;
 
-
-
-//    @OneToMany
-//    @JoinColumn(name = "giftcard_product_id", RefererencedColumnName ="product_id")
-//    private Giftcard_product giftcard_product;
-//
-//
-//    @OneToOne
-//    @JoinColumn(name = "info_service_id", RefererencedColumnName ="info_service_id")
-//    private Customer_info_services customer_info_services;
-//
 //    @OneToMany
 //    @JoinColumn(name = "country_of_redemtion_id", RefererencedColumnName ="country_red_id")
 //    private Country_of_redemtion country_of_redemtion;
@@ -55,4 +46,8 @@ public class Merchant {
 //    @OneToMany
 //    @JoinColumn(name = "country_of_merchant_id", RefererencedColumnName ="country_mer_id")
 //    private Country_of_merchant country_of_merchant;
+//
+//    @OneToOne
+//    @JoinColumn(name = "approval_id", referencedColumnName = "approval_id")
+//    private Approval approval;
 }

@@ -1,6 +1,6 @@
 package com.example.MerchantProject.services;
 
-import com.example.MerchantProject.model.Country;
+import com.example.MerchantProject.Entity.country.Country;
 import com.example.MerchantProject.reposetories.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

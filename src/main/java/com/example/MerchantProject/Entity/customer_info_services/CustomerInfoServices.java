@@ -1,4 +1,4 @@
-package com.example.MerchantProject.model.customer_info_services;
+package com.example.MerchantProject.Entity.customer_info_services;
 
 import lombok.Data;
 

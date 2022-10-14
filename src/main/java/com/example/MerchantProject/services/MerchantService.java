@@ -1,6 +1,6 @@
 package com.example.MerchantProject.services;
 
-import com.example.MerchantProject.Entity.Currency;
+
 import com.example.MerchantProject.Entity.Merchant;
 import com.example.MerchantProject.reposetories.MerchantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +35,8 @@ public class MerchantService {
        return merchantRepository.findAll();
     }
 
+
+    //needs rework
     public Merchant newMerchant (Merchant merchant) {
        if(merchantExist(merchant.getMerchant_id()))
            return null;

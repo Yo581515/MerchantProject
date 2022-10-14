@@ -1,4 +1,4 @@
-package com.example.MerchantProject.model;
+package com.example.MerchantProject.Entity.country;
 
 import lombok.Data;
 
